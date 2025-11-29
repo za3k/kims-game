@@ -1,0 +1,79 @@
+html {
+    background: black;
+    color: grey;
+}
+
+a {
+}
+
+.your-character {
+    border: 1px solid;
+    clear: both;
+    padding: 1rem;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin: 0;
+}
+
+.candidates {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+img {
+    max-width: 20vw;
+    min-width: 150px;
+    aspect-ratio: 1;
+    height: auto;
+    display: block;
+    position: relative;
+    user-select: none;
+    border: 2px solid transparent;
+}
+
+button, textarea {
+    display: block;
+}
+
+body > * {
+    margin: 2rem;
+}
+
+body[phase="1"] .phase-2,
+body[phase="1"] .phase-3,
+body[phase="2"] .phase-1,
+body[phase="2"] .phase-3,
+body[phase="3"] .phase-1,
+body[phase="3"] .phase-2
+{
+    display: none;
+}
+
+
+footer {
+    margin-top: 3rem;
+}
+
+a {
+    color: #ddd;
+}
+
+a:visited {
+    color: #bbb;
+}
+
+a:hover {
+    color: #ccc;
+}
+
+textarea {
+    width: 50vw;
+    height: 20vw;
+    resize: none;
+    font-size: 20pt;
+}

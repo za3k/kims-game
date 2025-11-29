@@ -1,0 +1,41 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta content="width=device-width,initial-scale=1" name="viewport"/>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body phase="1">
+    <div class="candidates phase-1"></div>
+    <div class="instructions phase-1">
+        Take a while to memorize the faces above. You can take as long as you want.
+    </div>
+    <button class="phase-1 start-phase-2">I'm ready, hide the faces</button>
+
+    <div class="phase-2 candidates">
+    </div>
+    <div class="phase-2 instructions">
+        One of the faces has been removed. Try to remember which.
+    </div>
+    <textarea class="phase-2" placeholder="Type as much as you can remember about the missing face here."></textarea>
+    <button class="phase-2 start-phase-3">I've typed everything I can remember.</button>
+
+    <div class="phase-3 candidates"></div>
+    <div class="phase-3 missing">
+        <h3>The missing person was</h3>
+    </div>
+    <div class="phase-3 recap">
+        <div>Your answer was:</div>
+        <textarea class="phase-3" disabled></textarea>
+    </div>
+    <div class="instructions phase-3">
+        How much did you remember about the missing face?
+
+        To play again, <a href="">click here</a>.
+    </div>
+    <footer class="phase-1">
+        <hr>
+        <b>Kim's Game</b> was made by <a href="https://za3k.com">Zachary "za3k" Vance</a> as part of <a href="https://za3k.com/hackaday">Hack-a-Day</a>, a challenge to do one new project each day in November. The source code is available <a href="https://github.com/za3k/guess-who">on github</a>. Faces are taken from <a href="https://thispersondoesnotexist.com">thispersondoesnotexist.com</a>.
+    </footer>
+</body>
+</html>
